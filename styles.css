@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Akaya Telivigala', cursive;
+  background-color: #D7D6D0;
+  line-height: 1.5;
+  font-size: 1.50rem;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+}
+.d-block{
+  width: 100%;
+  height: 92vh;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: grayscale(30%);
+}
+.nav-link{
+  color: black;
+  font-weight: 800;
+}
+.carousel-caption{
+  color: black;
+  text-transform: capitalize;
+}
+.carousel-caption> h5{
+  font-size: larger;
+}
+
+.carousel-caption> blockquote{
+  text-transform: none;
+}
+.about{
+  margin: 1.5rem;
+}
+.history> h4{
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: wavy;
+  font-weight: bolder;
+}
+.card> h4{
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: wavy;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: darkred;
+}
+.btn-link{
+  text-transform: capitalize;
+  color: black;
+  font-size: 1.2rem;
+}
+.btn-link:hover{
+  text-decoration: none;
+  color: darkred;
+  font-weight: 900;
+}
+.logo{
+  width: 100px;
+  height: auto;
+}
+i{
+  color: black;
+}
+i:hover{
+  color: darkslategray;
+}
+.jumbotron{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  
+}
+.accordion{
+  background-color:#D0CCCC;
+}
