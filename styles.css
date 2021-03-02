@@ -106,9 +106,9 @@ i:hover{
 /* menu styling */
 .menu{
   padding: 0;
-  margin: 0;
-  justify-content: center;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .title> h2{
   font-size: 2rem;
@@ -140,4 +140,8 @@ i:hover{
 header>h4{
   text-transform: capitalize;
   font-weight: bolder;
+}
+.promo-img{
+  width: 30px;
+  height: auto;
 }

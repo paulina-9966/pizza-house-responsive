@@ -11,7 +11,7 @@ const menu = [
     id: 2,
     title: "Mushroom's crazy",
     category: "pizza",
-    price: 15.99,
+    price: 19.99,
     img: "./images/pizza-1.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -19,7 +19,7 @@ const menu = [
     id: 3,
     title: "Tomato & olives",
     category: "pizza",
-    price: 15.99,
+    price: 17.99,
     img: "./images/pizza-2.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -27,7 +27,7 @@ const menu = [
     id: 4,
     title: "Spinach party",
     category: "pizza",
-    price: 15.99,
+    price: 21.99,
     img: "./images/pizza-3.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -35,7 +35,7 @@ const menu = [
     id: 5,
     title: "Red & Green",
     category: "pizza",
-    price: 15.99,
+    price: 24.99,
     img: "./images/pizza-0.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -43,7 +43,7 @@ const menu = [
     id: 6,
     title: "Be classic",
     category: "pizza",
-    price: 15.99,
+    price: 16.99,
     img: "./images/pizza-5.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -51,7 +51,7 @@ const menu = [
     id: 7,
     title: "Cheese Vulcano",
     category: "pizza",
-    price: 15.99,
+    price: 23.99,
     img: "./images/pizza-6.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -59,15 +59,15 @@ const menu = [
     id: 8,
     title: "rabbit fricassee",
     category: "dinner",
-    price: 15.99,
+    price: 35.99,
     img: "./images/din-1.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
   {
     id: 9,
-    title: "Queen Margaret",
+    title: "Alpaca steak",
     category: "dinner",
-    price: 15.99,
+    price: 59.99,
     img: "./images/din-2.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -75,7 +75,7 @@ const menu = [
     id: 10,
     title: "Vegan Bologneese",
     category: "dinner",
-    price: 15.99,
+    price: 24.99,
     img: "./images/din-3.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -83,39 +83,47 @@ const menu = [
     id: 11,
     title: "sourcy lemonade",
     category: "drink",
-    price: 15.99,
-    img: "./images/pizza-0.jpg",
+    price: 5.99,
+    img: "./images/d-1.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
   {
     id: 12,
     title: "colorfull cocktails",
     category: "drink",
-    price: 15.99,
-    img: "./images/pizza-0.jpg",
+    price: 19.99,
+    img: "./images/d-2.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
   {
     id: 13,
     title: "barist's cafe",
-    category: "beer",
-    price: 15.99,
-    img: "./images/pizza-0.jpg",
+    category: "drink",
+    price: 8.99,
+    img: "./images/d-3.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
   {
     id: 14,
     title: "common pilzner",
     category: "beer",
-    price: 15.99,
-    img: "./images/pizza-0.jpg",
+    price: 5.99,
+    img: "./images/b-2.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
   {
     id: 15,
+    title: "deep dark lager",
+    category: "beer",
+    price: 15.99,
+    img: "./images/b-1.jpg",
+    desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
+  },
+  {
+    id: 16,
     title: "sweet strawberries",
     category: "cake",
-    price: 15.99,
+    price: 45.99,
     img: "./images/c-2.jpg",
     desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit Illo, eum`,
   },
@@ -140,19 +148,20 @@ window.addEventListener("DOMContentLoaded", function() {
 function displayMenuItems(menuItems) {
 let displayMenu = menuItems.map(function(item) {
   // console.log(item);
-   return `<article class="menu-item py-4 col-lg-4 col-md-6 col-sm-12">
+   return `<article class="menu-item py-4 col-lg-4 col-md-6 col-sm-12
+   ml-auto mr-auto">
    <img src=${item.img} class="photo" alt=${item.title}/>
    <div class="item-info">
        <header>
-           <h4>${item.title}</h4>
+           <h4 class="text-center">${item.title}</h4>
            <h4 class="price">$${item.price}</h4>
        </header>
        <p class="item-text">${item.desc}</p>
    </div>
 </article>`;
 
-displayMenu = displayMenu.join("");
-sectionCenter.innerHTML = displayMenu;
+// displayMenu = displayMenu.join("");
+// sectionCenter.innerHTML = displayMenu;
 
 
 });
@@ -204,6 +213,6 @@ filterBtns.forEach(function(btn) {
         });
     });
   }
-//window.addEventListener('DOMContentLoaded', function () {
-  //displayMenuItems(menu);
-//});
+window.addEventListener('DOMContentLoaded', function () {
+    displayMenuItems(menu);
+  });
