@@ -130,6 +130,18 @@ const menu = [
 
   
 ];
+
+// start the menu funcionality
+
+//get parent element
+const sectionCenter = document.querySelector('.section-center');
+const container = document.querySelector('.btn-container');
+
+//load items
+window.addEventListener("DOMContentLoaded", function() {
+    displayMenuItems(menu);
+    displayMenuButtons();
+});
 // 
 const history = document.querySelector("#about");
 history.addEventListener("mouseover", mouseOver);
@@ -152,27 +164,6 @@ function mouseOut() {
   document.getElementById("about").removeEventListener();
 }
 
-// {
-//   e.preventDefault();
-//  history.innerHTML = `
-//   
-//   `
-// })
-
-
-
-// start the menu funcionality
-
-//get parent element
-const sectionCenter = document.querySelector('.section-center');
-const container = document.querySelector('.btn-container');
-
-//load items
-window.addEventListener("DOMContentLoaded", function() {
-    displayMenuItems(menu);
-    displayMenuButtons();
-});
-
 
 function displayMenuItems(menuItems) {
 let displayMenu = menuItems.map(function(item) {
@@ -182,7 +173,7 @@ let displayMenu = menuItems.map(function(item) {
    <img src=${item.img} class="photo" alt=${item.title}/>
    <div class="item-info">
        <header>
-           <h4 class="text-center">${item.title}</h4>
+           <h4 class="text-center item-title">${item.title}</h4>
            <h4 class="price">$${item.price}</h4>
        </header>
        <p class="item-text">${item.desc}</p>

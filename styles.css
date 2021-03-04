@@ -142,9 +142,17 @@ i:hover{
   font-weight: bolder;
   padding-top: 2rem;
 }
+.item-title{
+  text-transform: capitalize;
+  font-weight: bolder;
+  padding-top: 2rem;
+}
 .promo-img{
   width: 30px;
   height: auto;
+}
+.about{
+  padding-top: 3rem;
 }
 
 .content-history1 {
