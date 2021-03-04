@@ -137,11 +137,43 @@ i:hover{
   color: darkred;
   text-decoration: none;
 }
-header>h4{
+.about>h4{
   text-transform: capitalize;
   font-weight: bolder;
+  padding-top: 2rem;
 }
 .promo-img{
   width: 30px;
   height: auto;
+}
+
+.content-history1 {
+  position: relative;
+  animation-name: content;
+  animation-delay: 0;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+}
+.content-history2 {
+  position: relative;
+  animation-name: content2;
+  animation-delay: 0;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+}
+.content-history3 {
+  position: relative;
+  animation-name: content;
+  animation-delay: 0;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content{
+  0% {left: -1000px;}
+  100% {left: 0;}
+}
+@keyframes content2{
+  0% {right: -1000px;}
+  100% {right: 0;}
 }

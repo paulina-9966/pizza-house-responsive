@@ -130,6 +130,35 @@ const menu = [
 
   
 ];
+// 
+const history = document.querySelector("#about");
+history.addEventListener("mouseover", mouseOver);
+history.addEventListener("mouseout", mouseOut);
+
+function mouseOver() {
+  document.getElementById("about").innerHTML=`
+  <div class="history">
+  <p class="content-history1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quo deleniti provident voluptas maxime rem iusto, accusantium iure saepe, corporis eveniet, atque voluptatem deserunt iste. Ea asperiores alias eius suscipit qui mollitia unde, sunt vel ipsa dolorum, perspiciatis natus blanditiis porro itaque quos molestiae necessitatibus velit doloribus laborum veritatis
+rem!</p>
+<p class="content-history2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quo deleniti provident voluptas maxime rem iusto, accusantium iure saepe, corporis eveniet, atque voluptatem deserunt iste. Ea asperiores alias eius suscipit qui mollitia unde, sunt vel ipsa dolorum, perspiciatis natus blanditiis porro itaque quos molestiae necessitatibus velit doloribus laborum veritatis
+rem!</p>
+<p class="content-history1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quo deleniti provident voluptas maxime rem iusto, accusantium iure saepe, corporis eveniet, atque voluptatem deserunt iste. Ea asperiores alias eius suscipit qui mollitia unde, sunt vel ipsa dolorum, perspiciatis natus blanditiis porro itaque quos molestiae necessitatibus velit doloribus laborum veritatis
+rem!</p>
+<div>
+  `;
+}
+
+function mouseOut() {
+  document.getElementById("about").removeEventListener();
+}
+
+// {
+//   e.preventDefault();
+//  history.innerHTML = `
+//   
+//   `
+// })
+
 
 
 // start the menu funcionality
